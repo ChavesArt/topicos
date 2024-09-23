@@ -3,6 +3,9 @@ include "conexao.php";
 $conexao = conectar();
 
 $usuario = json_decode(file_get_contents("php://input"));
-$sql = "INSERT INTO usuario(id_usuario,nome,email,senha) values($id_usuario, '$nome', '$email','$senha')";
+$sql = "INSERT INTO usuario(nome,email,senha) values( '$usuario->nome', '$usuario->email','$usuario->senha')";
 
+executarSQL($conexao,$sql);
+$usuario->id_usuario = mysqli_insert_id($conexao);
+echo json_encode($usuario);
 ?>

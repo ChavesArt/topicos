@@ -5,7 +5,7 @@ $conexao =  mysqli_connect(
     "localhost", 
     "root",
     "",
-    "recuperar_senha"
+    "up_recuperar_senha"
 );
 
 if ($conexao == false) {
