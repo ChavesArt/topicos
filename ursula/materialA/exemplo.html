@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Controle</title>
+    <!-- Importando o CSS do Materialize -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <!-- Importando o ícone Material Design -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        /* Estilo para o menu lateral */
+        .sidenav {
+            height: 100%;
+            width: 250px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #263238; /* Cor de fundo escura */
+        }
+        .sidenav .sidenav-close {
+            color: white;
+        }
+        .sidenav .sidenav-close:hover {
+            background-color: #37474f;
+        }
+        .sidenav .sidenav li a {
+            color: white;
+        }
+        .sidenav .sidenav li a:hover {
+            background-color: #37474f;
+        }
+        .content {
+            margin-left: 250px; /* Espaço para o menu lateral */
+            padding: 20px;
+        }
+        .nav-wrapper {
+            background-color: #00695c; /* Cor de fundo para a barra de navegação */
+        }
+        .brand-logo {
+            font-size: 1.5rem;
+            padding-left: 20px;
+        }
+        .card {
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .card-content {
+            padding: 20px;
+        }
+        .card-action a {
+            color: #00796b;
+        }
+        .card-action a:hover {
+            color: #004d40;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Menu Lateral -->
+    <ul id="slide-out" class="sidenav sidenav-close">
+        <li><a href="#!" class="waves-effect"><i class="material-icons">dashboard</i> Dashboard</a></li>
+        <li><a href="#!" class="waves-effect"><i class="material-icons">people</i> Usuários</a></li>
+        <li><a href="#!" class="waves-effect"><i class="material-icons">insert_chart</i> Relatórios</a></li>
+        <li><a href="#!" class="waves-effect"><i class="material-icons">settings</i> Configurações</a></li>
+    </ul>
+
+    <!-- Barra de Navegação Superior -->
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo"><i class="material-icons">menu</i> Painel de Controle</a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#"><i class="material-icons">notifications</i></a></li>
+                <li><a href="#"><i class="material-icons">account_circle</i></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Área de Conteúdo Principal -->
+    <div class="content">
+        <div class="container">
+            <h5>Visão Geral</h5>
+            <div class="row">
+                <!-- Card 1 -->
+                <div class="col s12 m6 l4">
+                    <div class="card">
+                        <div class="card-content">
+                            <span class="card-title">Card 1</span>
+                            <p>Informações do Card 1.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">Mais informações</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col s12 m6 l4">
+                    <div class="card">
+                        <div class="card-content">
+                            <span class="card-title">Card 2</span>
+                            <p>Informações do Card 2.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">Mais informações</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col s12 m6 l4">
+                    <div class="card">
+                        <div class="card-content">
+                            <span class="card-title">Card 3</span>
+                            <p>Informações do Card 3.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">Mais informações</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Importando o JavaScript do Materialize -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        // Inicializando o menu lateral
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.sidenav');
+            M.Sidenav.init(elems);
+        });
+    </script>
+</body>
+</html>

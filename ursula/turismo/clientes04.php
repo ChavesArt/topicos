@@ -1,7 +1,7 @@
 <?php
 include "conect.php";
 
-$sql = "SELECT * FROM usuario ORDER BY nomeCliente DESC";
+$sql = "SELECT * FROM cliente ORDER BY nomeCliente DESC";
 
 $resultado = mysqli_query($conexao, $sql);
 ?>
