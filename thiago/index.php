@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -9,7 +9,7 @@
 
 <body>
 
-    <form onsubmit="return salvarUsuario(event);">
+    <form  onsubmit="return salvarUsuario(event);">
         <label for="id_usuario">ID:</label>
         <input type="number" name="id_usuario" id="id_usuario"> <br>
 
@@ -43,4 +43,4 @@
     <script src="../js/script.js"></script>
 </body>
 
-</html>
+</html> 

@@ -3,6 +3,7 @@ include "conexao.php";
 $conexao = conectar();
 
 $usuario = json_decode(file_get_contents("php://input"));
+
 $sql = "INSERT INTO usuario(nome,email,senha) values( '$usuario->nome', '$usuario->email','$usuario->senha')";
 
 executarSQL($conexao,$sql);
