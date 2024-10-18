@@ -9,6 +9,7 @@
     <nav class="brown  lighten-3">
     <div class="nav-wrapper container">
       <a href="#" class="brand-logo"><img src="mala02.png" height="55" width="60"></a>
+      <a href="#" data-target="mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li <?php if($paginaCorrente == 'index02.php') {echo 'class="active"';}?>> <a class="black-text" href="index02.php">Home</a></li>    
@@ -21,6 +22,24 @@
   </nav>
 </div> 
 
+<ul id="mobile" class="sidenav">
+      <li>
+        <div style="background-size:cover; background-position: center; background-image:url('IMG_4719.jpg');" class="user-view">
+            <a href="index02.php"><img class="circle" src="img02.webp"></a>
+            <a href="index02.php"><span class="white-text name">Viajando na maionese</span></a>
+            <a href="#email"><span class="white-text email">ursula.ribeiro@iffarroupilha.edu.br</span></a>
+        </div>
+      </li>
+
+        <li><a href="index02.php"><i class="material-icons">home</i> Home</a></li>
+        <li><a href="clientes1.php">Clientes</a></li>
+        <li><a href="quem.php">Quem somos</a></li>
+        <li><a href="login.php">Login</a></li>
+        <li><a href="destinos.php">Destinos</a></li>
+        <li><div class="divider"></div></li>
+        <li><a class="subheader">Outras opções</a></li>
+        <li><a href="#!">BLA BLA</a></li>
+    </ul>
 
 
         

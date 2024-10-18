@@ -17,6 +17,7 @@
 <main class="container">
     <h1> Clientes </h1>
     <a class="brown lighten-3 waves-effect waves-light btn" href="forminsere.php"><i class="material-icons right">add</i>Inserir</a>
+    <a class="brown lighten-3 waves-effect waves-light btn" href="relat02.php"><i class="material-icons right">add</i>gerar relatorio</a>
 <table class="striped">
         <thead>
           <tr>
@@ -85,5 +86,6 @@
       });
     });
 </script>
+<script type="text-javascript" src="../js/js.js"></script>
 </body>
 </html>
