@@ -151,20 +151,32 @@ function preencheForm(usuario) {
 
 }
 
-function excluir(evt){
+function excluir(evt) {
     let id_usuario = evt.currentTarget.id_usuario;
     let excluir = confirm("Você tem certeza que deseja excluir o usuario");
-    if(excluir){
-        
-        
+    if (excluir) {
+
+
         fetch('excluir.php?id_usuario=' + id_usuario,
-        {
-            method: "GET",
-            headers: { 'Content-Type': "application/json; charset=UTF-8" }
-        }
+            {
+                method: "GET",
+                headers: { 'Content-Type': "application/json; charset=UTF-8" }
+            }
         ).then(response => response.json())
-        .then(usuario => preencheForm(usuario))
-        .catch(error => console.log(error));
+            .then(retorno => excluirUsuario(retorno, id_usuario))
+            .catch(error => console.log(error));
     }
-    
+
+}
+
+function excluirUsuario(retorno, id_usuario) {
+
+    if (retorno) {
+        let tbody = document.getElementById('usuarios');
+        for (const tr of tbody.children) {
+            if (tr.children[0].innerHTML == id_usuario) {
+                tbody.removeChild(tr);
+            }
+        }
+    }
 }
