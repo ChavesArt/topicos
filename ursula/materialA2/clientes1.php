@@ -83,7 +83,6 @@
 
  <br>
       <a href='relatorio.php' class="brown lighten-3 waves-effect waves-light btn"><i class="material-icons right">add</i>Gerar relatório</a>
-      <table class="highlight">
 </main>
 
 

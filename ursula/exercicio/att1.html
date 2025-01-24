@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 30% 30% 40%;
+            grid-template-rows: 12% 35% 53%;
+            height: 100vh;
+            justify-content: center;
+
+            & div {
+                display: grid;
+            }
+        }
+
+        #header {
+            grid-column: 1;
+            grid-column: span 3;
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            padding-left: 10px;
+            background-color: antiquewhite;
+            
+            & ul{
+                list-style: none;
+                & a{
+                    text-decoration: none;
+                }
+                
+            }
+        }
+
+        #titulo {
+            grid-column: 1;
+            font-size: 25pt;
+            font-weight: bold;
+            place-items: center;
+        }
+
+        #texto {
+            grid-column: 2;
+            grid-column: span 2;
+            place-items: center;
+
+            & p {
+                padding: 10px;
+                font-size: 12pt;
+                text-align: justify;
+            }
+        }
+
+        #img1 {
+            grid-column: 1;
+            place-items: center;
+        }
+
+        #img2 {
+            grid-column: 2;
+            place-items: center;
+        }
+
+        #img3 {
+            grid-column: 3;
+            place-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="header">
+            <img src="pepsi.jpg" width="50px" height="30px" style="left: 200px;" alt="logo pepsi">
+            
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Conheça-nos</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+
+        </div>
+        <div id="titulo">Viagem na maionese</div>
+        <div id="texto">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, provident?
+                Ad fugit, incidunt vitae ducimus reiciendis delectus ullam quis quidem perferendis non tempore, quisquam
+                molestias?
+                Quaerat, sapiente quidem! Magnam, atque?Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Asperiores odio odit libero ut eaque quas!
+                Ducimus fugit unde voluptas enim minima neque pariatur numquam ea, sequi tempore aperiam sed
+                perferendis.
+            </p>
+        </div>
+        <div id="img1">
+            <img width="90%" height="80%" src="monte.jpg" alt="Uma grande casa no penhasco">
+        </div>
+        <div id="img2">
+            <img width="90%" height="80%" src="neon.jpg" alt="Uma grande cidade roxa">
+        </div>
+        <div id="img3">
+            <img width="90%" height="80%" src="templo.jfif" alt="Um grande templo asiatico">
+        </div>
+    </div>
+</body>
+
+</html>

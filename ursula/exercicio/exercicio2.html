@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercicio 2</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            background-color: antiquewhite;
+            border: 1px solid black;
+            display: grid;
+            grid-template-columns: 20% 20% 20%;
+            grid-template-rows: 32% 32% 32%;
+            height: 100vh;
+            justify-content: center;
+            
+            
+            
+            & div{
+                background-color: aqua;
+                border: 1px solid black;
+                display: grid;
+                place-items: center;
+            }
+        }
+        #n2{
+            grid-column: 2;
+            grid-column: span 2;
+        }
+        #n6{
+            grid-column: 1;
+            grid-column: span 3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div id="n1">1</div>
+        <div id="n2">2</div>
+        <div id="n3">3</div>
+        <div id="n4">4</div>
+        <div id="n5">5</div>
+        <div id="n6">6</div>
+    </div>
+    
+</body>
+</html>
